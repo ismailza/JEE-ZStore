@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>ProductController</servlet-name>
+        <servlet-class>ma.fstm.ilisi.zstore.backoffice.controller.ProductController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductController</servlet-name>
+        <url-pattern>/products</url-pattern>
+        <url-pattern>/product/new</url-pattern>
+        <url-pattern>/product/edit</url-pattern>
+        <url-pattern>/product/save</url-pattern>
+        <url-pattern>/product/update</url-pattern>
+        <url-pattern>/product/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CategoryController</servlet-name>
+        <servlet-class>ma.fstm.ilisi.zstore.backoffice.controller.CategoryController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryController</servlet-name>
+        <url-pattern>/categories</url-pattern>
+        <url-pattern>/category/new</url-pattern>
+        <url-pattern>/category/edit</url-pattern>
+        <url-pattern>/category/save</url-pattern>
+        <url-pattern>/category/update</url-pattern>
+        <url-pattern>/category/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClientController</servlet-name>
+        <servlet-class>ma.fstm.ilisi.zstore.backoffice.controller.ClientController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientController</servlet-name>
+        <url-pattern>/clients</url-pattern>
+        <url-pattern>/client/new</url-pattern>
+        <url-pattern>/client/edit</url-pattern>
+        <url-pattern>/client/save</url-pattern>
+        <url-pattern>/client/update</url-pattern>
+        <url-pattern>/client/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderController</servlet-name>
+        <servlet-class>ma.fstm.ilisi.zstore.backoffice.controller.OrderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderController</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+
+</web-app>
